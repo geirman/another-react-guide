@@ -34,18 +34,18 @@ When using ES2015/ES6, you should also create your components as classes.
 class Counter extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       count: 0
     };
   }
-  
+
   onClick = () => {
     this.setState({
       count: this.state.count + 1
-    })
-  }
-  
+    })-,
+  };
+
   render() {
     return (
       <div>
@@ -56,7 +56,7 @@ class Counter extends React.Component {
           {this.props.buttonText}
         </button>
       </div>
-    )
+    );
   }
 }
 ```
@@ -74,7 +74,7 @@ You should use stateless functions when your component
 ```jsx
 function Button(props) {
   let handleOnClick = () => props.onClick();
-  
+
   return (
     <button onClick={handleOnClick}>
       {props.text}
