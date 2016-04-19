@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+1. [Introduction](#introduction)
 1. [Basics](#basics)
 1. [Components](#components)
 1. [Data Handling](#data-handling)
@@ -12,6 +13,8 @@
 1. [Tips](#tips)
 1. [Misc](#misc)
 1. [Contributors](#contributors)
+
+## Introduction
 
 ## Basics
 
