@@ -100,8 +100,8 @@ function Button({text, onClick}) {
 
 ## Contributing
 
-Any contributions are highly and greatly appreciated! View [CONTRIBUTING.md](https://github.com/timche/best-practices-react/CONTRIBUTING.md) for more information.
+Any contributions and suggestions are greatly appreciated! 🤗 🎉
 
 ## Contributors
 
-[View Contributors](https://github.com/timche/best-practices-react/graphs/contributors)
+View [Contributors](https://github.com/timche/best-practices-react/graphs/contributors).
