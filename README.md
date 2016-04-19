@@ -12,6 +12,7 @@
 1. [Performance](#performance)
 1. [Tips](#tips)
 1. [Misc](#misc)
+1. [Resources](#resources)
 1. [Contributors](#contributors)
 
 ## Introduction
@@ -32,6 +33,11 @@ If you are not using [JSX](https://facebook.github.io/react/docs/jsx-in-depth.ht
 ## Tips
 
 ## Misc
+
+## Resources
+
+#### Lists
+- [awesome-react](https://github.com/enaqx/awesome-react) - A collection of awesome things regarding React ecosystem.
 
 ## Contributors
 
