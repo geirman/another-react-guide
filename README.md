@@ -98,6 +98,10 @@ function Button(props) {
 #### Lists
 - [awesome-react](https://github.com/enaqx/awesome-react) - A collection of awesome things regarding React ecosystem.
 
+## Contributing
+
+Any contributions are highly and greatly appreciated! View [CONTRIBUTING.md](https://github.com/timche/best-practices-react/CONTRIBUTING.md) for more information.
+
 ## Contributors
 
 [View Contributors](https://github.com/timche/best-practices-react/graphs/contributors)
