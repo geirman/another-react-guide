@@ -11,6 +11,7 @@
 1. [Performance](#performance)
 1. [Tips](#tips)
 1. [Misc](#misc)
+1. [Contributors](#contributors)
 
 ## Basics
 
@@ -25,3 +26,7 @@
 ## Tips
 
 ## Misc
+
+## Contributors
+
+[View Contributors](https://github.com/timche/best-practices-react/graphs/contributors)
