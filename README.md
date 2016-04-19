@@ -1,6 +1,6 @@
 # Best Practices React
 
-> A curated and opinionated list of best practices for React
+> A curated and opinionated list of best practices for [React](https://github.com/facebook/react)
 
 ## Table of Contents
 
