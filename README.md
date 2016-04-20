@@ -148,6 +148,9 @@ class Foo extends React.Component {
 }
 ```
 
+### Use `componentDidMount` for async actions
+When dealing with asynchronous actions like `setTimeout` or AJAX requests, do it `componentDidMount` (client only) and not in `componentWillMount` (client & server) to prevent issues/side effects.
+
 ### JSX
 #### Adding whitespace in texts before line break with `{' '}`
 Instead of dealing with `&nbsp;`, you can also write `{' '}` to add a whitespace before a line break in texts.
