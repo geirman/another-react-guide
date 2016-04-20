@@ -113,6 +113,45 @@ function App() {
 }
 ```
 
+### `bind` methods in `constructor`
+A `bind` call in `render` creates a new function on every single render. Instead `bind` methods in the `constructor`.
+```jsx
+// Bad
+class Foo extends React.Component {
+  doSomething() {
+    // Do something
+  }
+  
+  render() {
+    return (
+      <button onClick={this.doSomething.bind(this)}>
+        Do something
+      </button>
+    )
+  }
+}
+
+// Good
+class Foo extends React.Component {
+  constructor(props) {
+    super(props)
+    
+    this.doSomething = this.doSomething.bind(this)
+  }
+  doSomething() {
+    // Do something
+  }
+  
+  render() {
+    return (
+      <button onClick={this.doSomething}>
+        Do something
+      </button>
+    )
+  }
+}
+```
+
 ### ES7 Features
 #### Arrow Functions in Classes
 Instead of needing to `bind` our methods to `this`, ES7 property initializers (Stage 0) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
