@@ -214,7 +214,7 @@ class Counter extends React.Component {
 ## AJAX
 
 ## Performance
-The following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
+React already very performant out of the box and the following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
 
 ### Use `shouldComponentUpdate` to avoid unnecessary re-renderings
 By default [`shouldComponentUpdate`](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate) returns always `true` and re-renders the component when it receives new `props` or `state`. You can avoid that by returning `true` on only necessary `props` or `state` changes.
