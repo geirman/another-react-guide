@@ -20,6 +20,8 @@ This guide is not about how to get started with React, it is more about how you 
 
 There might be some things that you personally don't agree with or think is (totally) wrong. If you see the latter, please don't set this guide on fire. Instead contribute to it, so we learn together and get to know what would be correct. When something is outdated, feel free to contribute as well.
 
+I know that there is still (a lot of) content missing, but keep an eye on this guide as I will (try) to fill it up as good as I can. Therefore feedback and contributions are heartly welcome to make this guide great!
+
 ## Basics
 #### Use JSX Syntax & ES2015/ES6
 If you are not using [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) in your React components, you should consider to do it along with writing your code in ES2015/ES6 and transpile it with [Babel](https://babeljs.io/). Babel allows you to "use next generation Javascript, today", so your code is also future-proof. An introduction to ES6 and a list of features can be found [here](https://babeljs.io/docs/learn-es2015/). This document is based on ES6+ and assumes that you are already familiar with ES6.
