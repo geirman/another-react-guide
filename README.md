@@ -1,4 +1,4 @@
-# Another React Guide 🙄
+# Another React Guide 😑
 > Just another guide for [React](https://github.com/facebook/react)
 
 ## Table of Contents
