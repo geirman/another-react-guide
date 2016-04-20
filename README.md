@@ -39,19 +39,19 @@ When using ES2015/ES6, you should also create your components as classes with `c
 ```jsx
 class Counter extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       count: 0
-    };
+    }
     
-    this.increment = this.increment.bind(this);
+    this.increment = this.increment.bind(this)
   }
 
   increment() {
     this.setState({
       count: this.state.count + 1
-    });
+    })
   }
 
   render() {
@@ -64,7 +64,7 @@ class Counter extends React.Component {
           {this.props.buttonText}
         </button>
       </div>
-    );
+    )
   }
 }
 ```
@@ -87,7 +87,7 @@ function Button({text, onClick}) {
     <button onClick={onClick}>
       {text}
     </button>
-  );
+  )
 }
 ```
 
@@ -121,17 +121,17 @@ Instead of needing to `bind` our methods to `this`, ES7 property initializers (S
 ```jsx
 class Counter extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       count: 0
-    };
+    }
   }
 
   increment = () => {
     this.setState({
       count: this.state.count + 1
-    });
+    })
   }
 
   render() {
@@ -144,7 +144,7 @@ class Counter extends React.Component {
           {this.props.buttonText}
         </button>
       </div>
-    );
+    )
   }
 }
 ```
