@@ -1,5 +1,5 @@
-# Best Practices React
-> A curated and opinionated list of best practices for [React](https://github.com/facebook/react)
+# Another React Guide 🙄
+> Just another guide for [React](https://github.com/facebook/react)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -14,11 +14,11 @@
 1. [Contributors](#contributors)
 
 ## Introduction
-There are already tons of guides and articles about React, but as they are also sometimes outdated, I want to try to build a curated (and partially opinionated) set of React best practices, tips and more.
+There are already tons of guides and articles about React, but as they are also sometimes outdated, I want to try to build a curated (and partially opinionated) set of React "best practices" (caution!), tips and more.
 
-This document is not about how to get started with React, it is more about how you can get the most out of it while learning new things to build awesome applications effectively and efficiently with React.
+This guide is not about how to get started with React, it is more about how you can get the most out of it while learning new things to build awesome applications effectively and efficiently with React.
 
-There might be some things that you personally don't agree with or think is (totally) wrong. If you see the latter, please don't set this document on fire. Instead contribute to it, so we learn together and get to know what would be correct. When something is outdated, feel free to contribute as well.
+There might be some things that you personally don't agree with or think is (totally) wrong. If you see the latter, please don't set this guide on fire. Instead contribute to it, so we learn together and get to know what would be correct. When something is outdated, feel free to contribute as well.
 
 ## Basics
 #### Use JSX Syntax & ES2015/ES6
