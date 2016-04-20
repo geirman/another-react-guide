@@ -214,6 +214,28 @@ class Counter extends React.Component {
 ## AJAX
 
 ## Performance
+The following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
+
+### Use `shouldComponentUpdate` to avoid unnecessary re-renderings
+By default [`shouldComponentUpdate`](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate) returns always `true` and re-renders the component when it receives new `props` or `state`. You can avoid that by returning `true` on only necessary `props` or `state` changes.
+
+**Example:**
+```jsx
+shouldcomponentUpdate(nextProps) {
+  nextProps.foo !== this.props.foo
+}
+```
+
+This example above works for simple equality checks like `strings` or `numbers`. But if your `props` or `state` are `objects` or `arrays`, the reference will be compared and not the content. Therefore we need a deep comparison. React provides a helper function [`shallowCompare`](https://facebook.github.io/react/docs/shallow-compare.html) for this via npm [`react-addons-shallow-compare`](https://www.npmjs.com/package/react-addons-shallow-compare).
+
+**Example**:
+```jsx
+import shallowCompare from 'react-addons-shallow-compare'
+
+shouldComponentUpdate(nextProps, nextState) {
+  return shallowCompare(this, nextProps, nextState)
+}
+```
 
 ## Tips
 
