@@ -91,8 +91,29 @@ function Button({text, onClick}) {
 }
 ```
 
-### ES7 Features
+### Use Property Validation
+Make sure that components are used correctly by specifying `propTypes`. They are validating the data that the component is receiving and throws an error in the console when an invalid property has been provided which is really helpful during development. React has [different validators](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) that you should use, but you can also write your own one. Note that the validation is only active in development builds.
 
+**Example:** [(Open in JS Bin)](http://jsbin.com/setiyo/edit?js,console,output)
+```jsx
+function Headline({text}) {
+  return <h1>{text}</h1>
+}
+
+Headline.propTypes = {
+  text: React.PropTypes.string.isRequired
+}
+
+function App() {
+  // This will throw:
+  // "Warning: Failed propType: Invalid prop `text` of type `number` 
+  // supplied to `Headline`, expected `string`. Check the 
+  // render method of `App`."
+  return <Headline text={123} />
+}
+```
+
+### ES7 Features
 #### Arrow Functions in Classes
 Instead of needing to `bind` our methods to `this`, ES7 property initializers (Stage 0) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
 
