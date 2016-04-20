@@ -2,7 +2,7 @@
 > Just another guide for [React](https://github.com/facebook/react)
 
 ## Table of Contents
-1. [Introduction](#introduction)
+1. [Motivation](#motivation)
 1. [Basics](#basics)
 1. [Components](#components)
 1. [Data Handling](#data-handling)
@@ -11,10 +11,11 @@
 1. [Tips](#tips)
 1. [Misc](#misc)
 1. [Resources](#resources)
+1. [Contributing](#contributing)
 1. [Contributors](#contributors)
 
-## Introduction
-There are already tons of guides and articles about React, but as they are also sometimes outdated, I want to try to build a curated (and partially opinionated) set of React "best practices" (caution!), tips and more.
+## Motivation
+There are already tons of guides and articles about React, but as they are also sometimes outdated, I want to try to build a curated (and partially opinionated) set of React "best practices", tips and more.
 
 This guide is not about how to get started with React, it is more about how you can get the most out of it while learning new things to build awesome applications effectively and efficiently with React.
 
