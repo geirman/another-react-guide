@@ -178,7 +178,7 @@ function App() {
 
 ### ES7 Features
 #### Arrow Functions in Classes
-Instead of needing to `bind` your methods to `this`, ES7 property initializers ([stage 0 preset](https://babeljs.io/docs/plugins/preset-stage-0/) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
+Instead of needing to `bind` your methods to `this`, ES7 property initializers ([stage 0 preset](https://babeljs.io/docs/plugins/preset-stage-0/)) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/tajaqo/edit?js,output)
 ```jsx
@@ -217,7 +217,7 @@ class Counter extends React.Component {
 ## AJAX
 
 ## Performance
-React already very performant out of the box and the following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
+React is already very performant out of the box and the following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
 
 ### Use `shouldComponentUpdate` to avoid unnecessary re-renderings
 By default [`shouldComponentUpdate`](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate) returns always `true` and re-renders the component when it receives new `props` or `state`. You can avoid that by returning `true` on only necessary `props` or `state` changes.
@@ -235,9 +235,13 @@ This example above works for simple equality checks like `strings` or `numbers`.
 ```jsx
 import shallowCompare from 'react-addons-shallow-compare'
 
-shouldComponentUpdate(nextProps, nextState) {
-  return shallowCompare(this, nextProps, nextState)
-}
+...
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return shallowCompare(this, nextProps, nextState)
+  }
+
+...
 ```
 
 ## Tips
