@@ -149,7 +149,7 @@ class Foo extends React.Component {
 ```
 
 ### Use `componentDidMount` for async actions
-When dealing with asynchronous actions like `setTimeout` or AJAX requests, do it in `componentDidMount` (client only) and not in `componentWillMount` (client & serverside) to prevent issues/side effects.
+When dealing with asynchronous actions like `setTimeout` or AJAX requests, do it in [`componentDidMount`](https://facebook.github.io/react/docs/component-specs.html#mounting-componentdidmount) (client only) and not in [`componentWillMount`](https://facebook.github.io/react/docs/component-specs.html#mounting-componentwillmount) (client & serverside) to prevent issues/side effects.
 
 ### JSX
 #### Adding whitespace in texts before line break with `{' '}`
@@ -175,7 +175,7 @@ function App() {
 
 ### ES7 Features
 #### Arrow Functions in Classes
-Instead of needing to `bind` your methods to `this`, ES7 property initializers (Stage 0) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
+Instead of needing to `bind` your methods to `this`, ES7 property initializers ([stage 0 preset](https://babeljs.io/docs/plugins/preset-stage-0/) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/tajaqo/edit?js,output)
 ```jsx
