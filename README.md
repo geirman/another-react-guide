@@ -115,6 +115,8 @@ function App() {
 
 ### `bind` methods in `constructor`
 A `bind` call in `render` creates a new function on every single render. Instead `bind` methods in the `constructor`.
+
+**Example:**
 ```jsx
 // Bad
 class Foo extends React.Component {
