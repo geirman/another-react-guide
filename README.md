@@ -17,7 +17,7 @@
 
 ## Introduction
 
-There are already tons of guides and articles about React, but as they are also very quickly outdated, I want to try to build a curated (and partly opinionated) set of React best practices, performance optimizations, how to's, tips and more.
+There are already tons of guides and articles about React, but as they are also sometimes outdated, I want to try to build a curated (and partially opinionated) set of React best practices, tips and more.
 
 This document is not about how to get started with React, it is more about how you can get the most out of it while learning new things to build awesome applications effectively and efficiently with React.
 
