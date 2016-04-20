@@ -91,6 +91,43 @@ function Button({text, onClick}) {
 }
 ```
 
+### ES7 Features
+
+#### Arrow Functions in Classes
+Instead of needing to `bind` our methods to `this`, ES7 property initializers (Stage 0) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
+
+**Example:** [(Open in JS Bin)](http://jsbin.com/tajaqo/edit?js,output)
+```jsx
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0
+    };
+  }
+
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>
+          Counter: {this.state.count}
+        </h1>
+        <button onClick={this.increment}>
+          {this.props.buttonText}
+        </button>
+      </div>
+    );
+  }
+}
+```
+
 ## Data Handling
 
 ## AJAX
