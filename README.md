@@ -154,6 +154,28 @@ class Foo extends React.Component {
 }
 ```
 
+### JSX
+#### Adding whitespace in texts before line break with `{' '}`
+Instead of dealing with `&nbsp;`, you can also write `{' '}` to add a whitespace before a line break in texts.
+
+**Example:** [(Open in JS Bin)](http://jsbin.com/wokugo/edit?js,output)
+```jsx
+function App() {
+  return (
+    <div>
+      <p>
+        An ugly HTML entity before&nbsp;
+        <i>me.</i>
+      </p>
+      <p>
+        Look at{' '}
+        <i>me!</i>
+      </p>
+    </div>
+  )
+}
+```
+
 ### ES7 Features
 #### Arrow Functions in Classes
 Instead of needing to `bind` our methods to `this`, ES7 property initializers (Stage 0) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
