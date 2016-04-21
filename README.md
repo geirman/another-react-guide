@@ -7,7 +7,7 @@
 1. [Components](#components)
 1. [Data Handling](#data-handling)
 1. [AJAX](#ajax)
-1. [Performance](#performance)
+1. [Performance Optimizations](#performance-optimizations)
 1. [Tips](#tips)
 1. [Misc](#misc)
 1. [Resources](#resources)
@@ -216,7 +216,7 @@ class Counter extends React.Component {
 
 ## AJAX
 
-## Performance
+## Performance Optimizations
 React is already very performant out of the box and the following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
 
 ### Use `shouldComponentUpdate` to avoid unnecessary re-renderings
