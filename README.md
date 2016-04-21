@@ -226,7 +226,7 @@ By default [`shouldComponentUpdate`](https://facebook.github.io/react/docs/compo
 
 **Example:**
 ```jsx
-shouldcomponentUpdate(nextProps) {
+shouldComponentUpdate(nextProps) {
   nextProps.foo !== this.props.foo
 }
 ```
