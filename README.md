@@ -226,9 +226,9 @@ By default [`shouldComponentUpdate`](https://facebook.github.io/react/docs/compo
 
 **Example:**
 ```jsx
-shouldComponentUpdate(nextProps) {
-  nextProps.foo !== this.props.foo
-}
+  shouldComponentUpdate(nextProps) {
+    return nextProps.foo !== this.props.foo
+  }
 ```
 
 This example above works for simple equality checks like `strings` or `numbers`. But if your `props` or `state` are `objects` or `arrays`, the reference will be compared and not the content. Therefore we need a deep comparison. React provides a helper function [`shallowCompare`](https://facebook.github.io/react/docs/shallow-compare.html) for this via npm [`react-addons-shallow-compare`](https://www.npmjs.com/package/react-addons-shallow-compare).
