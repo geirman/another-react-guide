@@ -5,10 +5,9 @@
 1. [Motivation](#motivation)
 1. [Basics](#basics)
 1. [Components](#components)
-1. [Data Handling](#data-handling)
 1. [AJAX](#ajax)
+1. [Data Handling](#data-handling)
 1. [Performance Optimizations](#performance-optimizations)
-1. [Tips](#tips)
 1. [Misc](#misc)
 1. [Resources](#resources)
 1. [Contributing](#contributing)
@@ -30,7 +29,7 @@ If you are not using [JSX](https://facebook.github.io/react/docs/jsx-in-depth.ht
 ## Components
 ### Use Classes and Stateless Functions
 #### Classes
-When using ES2015/ES6, you should also create your components as classes with `class extends React.Component` instead of `React.createClass` (unless you need mixins, but this should be a rare case).
+When using ES6, you should also create your components as classes with `class extends React.Component` instead of ES5 `React.createClass` (unless you need mixins, but this should be a rare case and you have very godo reason to do so).
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/vimate/edit?js,output)
 ```jsx
@@ -163,10 +162,13 @@ Instead of dealing with `&nbsp;`, you can also write `{' '}` to add a whitespace
 function App() {
   return (
     <div>
+      // Bad
       <p>
         An ugly HTML entity before&nbsp;
         <i>me.</i>
       </p>
+      
+      // Good
       <p>
         Look at{' '}
         <i>me!</i>
@@ -177,8 +179,8 @@ function App() {
 ```
 
 ### ES7 Features
-#### Arrow Functions in Classes
-Instead of needing to `bind` your methods to `this`, ES7 property initializers ([stage 0 preset](https://babeljs.io/docs/plugins/preset-stage-0/)) allows us to use arrow functions (ES6), so we can omit the extra binding (in the constructor).
+#### Use Arrow Functions in Classes
+Instead of needing to `bind` your methods to `this`, ES7 property initializers ([stage 0 preset](https://babeljs.io/docs/plugins/preset-stage-0/)) allows us to use arrow functions (ES6), so we can omit the extra binding in `constructor`.
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/tajaqo/edit?js,output)
 ```jsx
@@ -212,9 +214,9 @@ class Counter extends React.Component {
 }
 ```
 
-## Data Handling
-
 ## AJAX
+
+## Data Handling
 
 ## Performance Optimizations
 React is already very performant out of the box and the following performance tips are optional and not needed when you have a small application. Performance can be an issue when your application is at some point very big and you have hundreds of components for example.
@@ -243,8 +245,6 @@ import shallowCompare from 'react-addons-shallow-compare'
 
 ...
 ```
-
-## Tips
 
 ## Misc
 
