@@ -29,7 +29,7 @@ If you are not using [JSX](https://facebook.github.io/react/docs/jsx-in-depth.ht
 ## Components
 ### Use Classes and Stateless Functions
 #### Classes
-When using ES6, you should also create your components as classes with `class extends React.Component` instead of ES5 `React.createClass` (unless you need mixins, but this should be a rare case and you have very godo reason to do so).
+When using ES6, you should also create your components as classes with `class extends React.Component` instead of ES5 `React.createClass`. The downside is you cannot use mixins, but that's okay because [HOCs](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775) are the new mixin.
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/vimate/edit?js,output)
 ```jsx
@@ -40,7 +40,7 @@ class Counter extends React.Component {
     this.state = {
       count: 0
     }
-    
+
     this.increment = this.increment.bind(this)
   }
 
@@ -75,6 +75,7 @@ You should use stateless functions when your component
 - has no `refs`.
 - doesn't need a `constructor`.
 - doesn't access `context`.
+- doesn't need access to component lifecycle methods
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/yofevi/edit?js,output)
 ```jsx
@@ -102,8 +103,8 @@ Headline.propTypes = {
 
 function App() {
   // This will throw:
-  // "Warning: Failed propType: Invalid prop `text` of type `number` 
-  // supplied to `Headline`, expected `string`. Check the 
+  // "Warning: Failed propType: Invalid prop `text` of type `number`
+  // supplied to `Headline`, expected `string`. Check the
   // render method of `App`."
   return <Headline text={123} />
 }
@@ -119,7 +120,7 @@ class Foo extends React.Component {
   doSomething() {
     // Do something
   }
-  
+
   render() {
     return (
       <button onClick={this.doSomething.bind(this)}>
@@ -133,13 +134,13 @@ class Foo extends React.Component {
 class Foo extends React.Component {
   constructor(props) {
     super(props)
-    
+
     this.doSomething = this.doSomething.bind(this)
   }
   doSomething() {
     // Do something
   }
-  
+
   render() {
     return (
       <button onClick={this.doSomething}>
@@ -167,7 +168,7 @@ function App() {
         An ugly HTML entity before&nbsp;
         <i>me.</i>
       </p>
-      
+
       // Good
       <p>
         Look at{' '}
