@@ -75,7 +75,7 @@ You should use stateless functions when your component
 - has no `refs`.
 - doesn't need a `constructor`.
 - doesn't access `context`.
-- doesn't need access to component lifecycle methods
+- doesn't need access to component lifecycle methods.
 
 **Example:** [(Open in JS Bin)](http://jsbin.com/yofevi/edit?js,output)
 ```jsx
